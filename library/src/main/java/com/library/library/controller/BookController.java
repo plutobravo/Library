@@ -29,7 +29,7 @@ public class BookController {
 	}
 
 	@GetMapping("/findAllBooks/{bookName}")
-	public Book getBook(@RequestParam String bookName) {
+	public Book getBook(@PathVariable String bookName) {
 		return service.findBook(bookName);
 	}
 
